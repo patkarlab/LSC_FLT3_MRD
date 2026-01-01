@@ -9,8 +9,8 @@ filename = args[1]
 outfile = args[2]
 
 df = pd.read_csv(filename, dtype='unicode')
-x = df['Otherinfo1']
-discarded_column = df.columns.get_loc('Otherinfo2')
+x = df['Otherinfo']
+discarded_column = df.columns.get_loc('Otherinfo')
 
 data = dict()
 somatic_cols = ['Chr', 'Start', 'End', 'Ref', 'Alt', 'FILTER', 'SOMATIC_FLAG', 'REF_COUNT', 'ALT_COUNT', 'VAF%', 

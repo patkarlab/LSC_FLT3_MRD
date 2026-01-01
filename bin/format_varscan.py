@@ -10,8 +10,8 @@ outfile = args[2]
 vartools=['MuTect2 | ', 'VarScan2 | ', 'VarDict | ', 'LoFreq | ', 'Strelka | ', 'Freebayes | ', 'Platypus | ']
 
 df = pd.read_csv(filename, dtype='unicode')
-x = df['Otherinfo1']
-discarded_column=df.columns.get_loc('Otherinfo2')
+x = df['Otherinfo']
+discarded_column=df.columns.get_loc('Otherinfo')
 data = dict()
 somatic_cols=['Chr','Start','End','Ref','Alt','FILTER','SOMATIC_FLAG','REF_COUNT','ALT_COUNT','VAF%','Func.refGene','Gene.refGene','ExonicFunc.refGene','AAChange.refGene','Gene_full_name.refGene','Function_description.refGene','Disease_description.refGene','cosmic84','PopFreqMax']
 data.setdefault('FILTER', [])

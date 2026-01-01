@@ -38,14 +38,14 @@ The list of adaptors required by Trimmomatic, `NexteraPE-PE.fa` & `TruSeq2-PE.fa
 
 1. Transfer the `fastq.gz` files to the `sequences/` folder.
 
-2. The samplesheet is `samplesheet.csv`. The sample_ids, without the file extension, should be mentioned in samplesheet in the following format-
-sample1
-sample2
-sample3
+2. The samplesheet is `samplesheet.csv`. The sample_ids, without the file extension, should be mentioned in samplesheet in the following format - <br>
+sample1<br>
+sample2<br>
+sample3<br>
 Please check for empty lines in the samplesheet before running the pipeline.
 
 
-3. The pipeline can be run by running the command-
+3. The pipeline can be executed with the following command
 
 ```bash
 nextflow run FLT3_MRD.nf -entry FLT3_MRD -profile docker -resume -bg
