@@ -5,3 +5,6 @@ Final_Output*/
 .nextflow/
 .nextflow.pid
 *.log
+sequences/*
+!sequences/sample1_S*.fastq.gz
+!sequences/sample2_*.fastq.gz
